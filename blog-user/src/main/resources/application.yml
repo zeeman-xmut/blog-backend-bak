@@ -1,0 +1,18 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: blog-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 1.15.64.53:8848
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://1.15.64.53:3306/blog_system
+    username: zeeman
+    password: Zhangzm@440412
+  jackson:
+    serialization:
+      write-enums-using-to-string: true
